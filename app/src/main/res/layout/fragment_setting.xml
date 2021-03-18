@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ui.fragment.SettingFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGoals"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvGoals"
+        app:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goals"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ivYourInfo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:src="@drawable/dark_your_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivYouBetter"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoals" />
+
+    <ImageView
+        android:id="@+id/ivYouBetter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:src="@drawable/light_you_better"
+        app:layout_constraintLeft_toRightOf="@+id/ivYourInfo"
+        app:layout_constraintRight_toLeftOf="@+id/ivYourRisk"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoals" />
+
+    <ImageView
+        android:id="@+id/ivYourRisk"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:src="@drawable/light_your_risk"
+        app:layout_constraintLeft_toRightOf="@+id/ivYouBetter"
+        app:layout_constraintRight_toLeftOf="@+id/ivYourFamily"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoals" />
+
+    <ImageView
+        android:id="@+id/ivYourFamily"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:src="@drawable/light_your_family"
+        app:layout_constraintLeft_toRightOf="@+id/ivYourRisk"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoals" />
+
+        <FrameLayout
+            android:id="@+id/containerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivYouBetter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>

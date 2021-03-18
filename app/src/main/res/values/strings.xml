@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FHTestApp</string>
+    <string name="title_activity_seeting">MainActivity</string>
+    <string name="title_setting">Settings</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="know_your_risk">Know Your Risk</string>
+    <string name="know_you_better">Know You Better</string>
+    <string name="your_info">Your Info</string>
+    <string name="know_your_family">Know Your Family</string>
+    <string name="info_ques_one">Who is this investment for?*</string>
+
+    <string-array name="investment">
+        <item>Self</item>
+        <item>Wife</item>
+        <item>Family</item>
+    </string-array>
+
+</resources>
